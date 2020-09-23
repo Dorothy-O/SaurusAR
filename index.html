@@ -4,36 +4,15 @@
     <!-- we import arjs version without NFT but with marker + location based support -->
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <body style="margin : 0px; overflow: hidden;">
-        <a-scene 
-         ajrs
-         embedded
-         renderer="logarithmicDepthBuffer: true;"
-         vr-mode-ui="enabled: false"
-         gesture-detector
-         id="scene"
-    >
-       <a-assets>
-           <a-asset-item
-             id="Ribtest1"
-             src="https://raw.githubusercontent.com/Dorothy-O/SaurusAR/master/Ribtest1.gltf"
-           >
-                      
-        <a-marker 
-           preset="hiro"
-           raycaster="objects: .clickable"
-           emitevents="true"
-           cursor="fuse: false; rayOrigin: mouse;"
-           id="markerA"
-        >
+        <a-scene embedded arjs>
+        <a-marker preset="hiro">
             <a-entity
-            id="Ribtest1-model"
-            gltf-model="#Ribtest1"
             position="0 -2 0"
             scale="0.25 0.25 0.25"
+            gltf-model="https://raw.githubusercontent.com/Dorothy-O/SaurusAR/master/Ribtest1.gltf"
             class="clickable"
             gesture-handler
-            >
-            </a-entity>
+            ></a-entity>
         </a-marker>
         <a-entity camera></a-entity>
         </a-scene>
