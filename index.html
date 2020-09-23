@@ -13,20 +13,22 @@
            gesture-detector
            id="scene">
         <a-assets>
+             <a-text value="Hello, World!"></a-text>
             <a-asset-item
               id="ribtest"
               src="https://raw.githubusercontent.com/Dorothy-O/SaurusAR/master/Ribtest1.gltf">
         </a-asset-item>
         </a-assets>
-        <a-text value="Hello, World!"></a-text>
         <a-marker 
              preset="hiro"
              raycaster="objects: .clickable"
              emitevents="true"
              cursor="fuse: false; rayOrigin: mouse;"
              id="markerA"
+                  
              >
             <a-entity
+            <a-text value="Hello, World!"></a-text>
             id="ribtest_model"
             position="0 -2 0"
             scale="0.25 0.25 0.25"
