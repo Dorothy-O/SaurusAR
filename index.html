@@ -28,19 +28,22 @@
              >
             <a-entity
             id="ribtest_model"
-            position="0 -2 0"
+            position="0 0 0"
             scale="0.25 0.25 0.25"
             gltf-model="https://raw.githubusercontent.com/Dorothy-O/SaurusAR/master/Ribtest1.gltf"
             class="clickable"
             gesture-handler
             ></a-entity>
-            <a-entity text="font: https://cdn.aframe.io/fonts/mozillavr.fnt; value: Via URL.">
+          
+            <a-entity 
+               text="font: https://cdn.aframe.io/fonts/mozillavr.fnt; value: Via URL."
+               text="value: This text will be 4 units wide."
+               position="0 0 4"
+               geometry="primitive: plane; width: 4; height: auto"
+               material="color: blue"
+               ></a-entity>
             <a-text value="Hello, World!">Hello World</a-text>
-                </a-entity>
-            <a-entity
-  geometry="primitive: plane; width: 4; height: auto"
-  material="color: blue"
-  text="value: This text will be 4 units wide."></a-entity>
+         </a-entity>
         </a-marker>
         <a-entity camera></a-entity>
         </a-scene>
