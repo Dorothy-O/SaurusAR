@@ -37,12 +37,15 @@
           
             <a-entity 
                text="font: https://cdn.aframe.io/fonts/mozillavr.fnt; value: Via URL."
-               text value="his text will be 4 units wide."
+               text value="This text will be 4 units wide."
                position="0 0 8"
                geometry="primitive: plane; width: 4; height: auto"
                material="color: blue"
                ></a-entity>
-            <a-text value="Hello, World!">Hello World</a-text>
+            <a-text 
+                    color="blue"
+                    value="Hello, World!">Hello World</a-text>
+                    position="0 0 8"
          </a-entity>
         </a-marker>
         <a-entity camera></a-entity>
