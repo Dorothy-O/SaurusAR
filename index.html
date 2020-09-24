@@ -13,7 +13,11 @@
            gesture-detector
            id="scene">
         <a-assets>
-             
+            <a-asset-item
+              id="ribtest"
+              src="https://raw.githubusercontent.com/Dorothy-O/SaurusAR/master/Ribtest1.gltf">
+        </a-asset-item>
+                    <a-assets>
             <a-asset-item
               id="ribtest"
               src="https://raw.githubusercontent.com/Dorothy-O/SaurusAR/master/Ribtest1.gltf">
@@ -21,7 +25,7 @@
             <a-text value="Hello, World!"></a-text>
         </a-assets>
         <a-marker 
-             preset="hiro"
+             type='barcode' value='1'>
              raycaster="objects: .clickable"
              emitevents="true"
              cursor="fuse: false; rayOrigin: mouse;"
@@ -38,7 +42,7 @@
             <a-entity text="font: https://cdn.aframe.io/fonts/mozillavr.fnt; value: Via URL.">
             <a-text value="Hello, World!">Hello World</a-text>
                 </a-entity>
-            <a-entity
+            <a-entity>
   geometry="primitive: plane; width: 4; height: auto"
   material="color: blue"
   text="value: This text will be 4 units wide."></a-entity>
