@@ -13,21 +13,10 @@
            vr-mode-ui="enabled: false"
            gesture-detector
            id="scene">
-        <a-assets>
-            <a-asset-item
-              id="ribtest"
-              src="https://raw.githubusercontent.com/Dorothy-O/SaurusAR/master/Ribtest1.gltf">
-        </a-asset-item>
-        <a-assets>
-            <a-asset-item
-              id="ribtest"
-              src="https://raw.githubusercontent.com/Dorothy-O/SaurusAR/master/Ribtest1.gltf">
-        </a-asset-item>
-            <a-text value="Hello, World!"></a-text>
-        </a-assets>
+            
         <a-marker 
              arSetPatternDetectionMode(<#ARHandle handle#>, AR_MATRIX_CODE_DETECTION)
-             type='barcode' value='1'>
+             preset="hiro"
              raycaster="objects: .clickable"
              emitevents="true"
              cursor="fuse: false; rayOrigin: mouse;"
